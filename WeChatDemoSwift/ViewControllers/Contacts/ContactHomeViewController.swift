@@ -35,6 +35,8 @@ class ContactHomeViewController: BaseViewController, UITableViewDataSource, UITa
         }
         dataTitles.append("#")
         
+        self.tableView.tintColor = UIColor.darkGrayColor()
+        
         self.tableView.registerClass(ContactHomeTableViewCell.self, forCellReuseIdentifier: "ContactHomeTableViewCell")
         
         self.tableView.registerClass(ContactTableViewHeaderView.self, forHeaderFooterViewReuseIdentifier: "ContactTableViewHeaderView")
@@ -107,7 +109,7 @@ class ContactHomeViewController: BaseViewController, UITableViewDataSource, UITa
     }
     */
     
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 
