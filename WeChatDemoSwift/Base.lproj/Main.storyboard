@@ -778,7 +778,7 @@
         <!--通讯录-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="ContactHomeViewController" customModule="WeChatDemoSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="8rJ-Kc-sve" customClass="ContactHomeViewController" customModule="WeChatDemoSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -786,7 +786,24 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YbJ-tj-3ge">
+                                <rect key="frame" x="0.0" y="44" width="320" height="387"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="QL4-6z-yFO"/>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="EnZ-gq-Sq6"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="YbJ-tj-3ge" secondAttribute="bottom" id="reW-nl-OcO"/>
+                            <constraint firstItem="YbJ-tj-3ge" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="taT-bP-ZaL"/>
+                            <constraint firstAttribute="trailing" secondItem="YbJ-tj-3ge" secondAttribute="trailing" id="vEU-96-hU3"/>
+                            <constraint firstItem="YbJ-tj-3ge" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="vyB-M3-FWe"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="通讯录" id="dog-BE-I5d">
                         <barButtonItem key="rightBarButtonItem" image="barbuttonicon_addfriends" style="plain" id="zxt-tS-DJy">
@@ -795,6 +812,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="YbJ-tj-3ge" id="fQb-Wk-75F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -2444,7 +2464,7 @@
         <image name="wechat_list_1.png" width="141" height="123"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="6fB-do-Bxv"/>
         <segue reference="i4x-kE-6Ff"/>
-        <segue reference="iCC-be-uLQ"/>
     </inferredMetricsTieBreakers>
 </document>

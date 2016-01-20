@@ -11,6 +11,9 @@
 		3A0B8CA31C4E0F17007A7EBA /* WeChatUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B8CA11C4E0F17007A7EBA /* WeChatUserInfoViewController.swift */; };
 		3A0B8CA41C4E0F17007A7EBA /* WeChatUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A0B8CA21C4E0F17007A7EBA /* WeChatUserInfoViewController.xib */; };
 		3A0B8CA71C4E11BA007A7EBA /* ImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B8CA61C4E11BA007A7EBA /* ImageUtil.swift */; };
+		3A0B8CB61C4F7D7F007A7EBA /* ContactHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B8CB41C4F7D7F007A7EBA /* ContactHomeTableViewCell.swift */; };
+		3A0B8CB71C4F7D7F007A7EBA /* ContactTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B8CB51C4F7D7F007A7EBA /* ContactTableViewHeaderView.swift */; };
+		3A0B8CB91C4F7DBD007A7EBA /* ContactList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A0B8CB81C4F7DBD007A7EBA /* ContactList.plist */; };
 		3A1AD6F71C4A7D3700B03B1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1AD6F61C4A7D3700B03B1F /* AppDelegate.swift */; };
 		3A1AD6FE1C4A7D3700B03B1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1AD6FC1C4A7D3700B03B1F /* Main.storyboard */; };
 		3A1AD7001C4A7D3700B03B1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A1AD6FF1C4A7D3700B03B1F /* Assets.xcassets */; };
@@ -58,6 +61,9 @@
 		3A0B8CA11C4E0F17007A7EBA /* WeChatUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeChatUserInfoViewController.swift; sourceTree = "<group>"; };
 		3A0B8CA21C4E0F17007A7EBA /* WeChatUserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeChatUserInfoViewController.xib; sourceTree = "<group>"; };
 		3A0B8CA61C4E11BA007A7EBA /* ImageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtil.swift; sourceTree = "<group>"; };
+		3A0B8CB41C4F7D7F007A7EBA /* ContactHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactHomeTableViewCell.swift; sourceTree = "<group>"; };
+		3A0B8CB51C4F7D7F007A7EBA /* ContactTableViewHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewHeaderView.swift; sourceTree = "<group>"; };
+		3A0B8CB81C4F7DBD007A7EBA /* ContactList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ContactList.plist; sourceTree = "<group>"; };
 		3A1AD6F31C4A7D3700B03B1F /* WeChatDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A1AD6F61C4A7D3700B03B1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A1AD6FD1C4A7D3700B03B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 				3A1AD7011C4A7D3700B03B1F /* LaunchScreen.storyboard */,
 				3A1AD70A1C4A7E4600B03B1F /* Images */,
 				3A1AD71B1C4A7E4600B03B1F /* WeiChatListDataSource.plist */,
+				3A0B8CB81C4F7DBD007A7EBA /* ContactList.plist */,
 				3A1AD71C1C4A7E4600B03B1F /* country_code.txt */,
 				3A1AD7041C4A7D3700B03B1F /* Info.plist */,
 				3A1AD73C1C4A835300B03B1F /* PrefixHeader.pch */,
@@ -188,6 +195,8 @@
 		3A1AD72F1C4A7F2200B03B1F /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
+				3A0B8CB41C4F7D7F007A7EBA /* ContactHomeTableViewCell.swift */,
+				3A0B8CB51C4F7D7F007A7EBA /* ContactTableViewHeaderView.swift */,
 				3A1AD7411C4A87D100B03B1F /* ContactHomeViewController.swift */,
 				3A5D30011C4B4AB200701EC8 /* WeChatAddFriendTableViewController.swift */,
 				3A5D30031C4B4B5400701EC8 /* WeChatAddFriendTableHeaderView.xib */,
@@ -331,6 +340,7 @@
 				3AF31BBF1C4DC8280045FFC1 /* wechat_list_4.png in Resources */,
 				3AF31BBC1C4DC8280045FFC1 /* wechat_list_1.png in Resources */,
 				3A1AD7001C4A7D3700B03B1F /* Assets.xcassets in Resources */,
+				3A0B8CB91C4F7DBD007A7EBA /* ContactList.plist in Resources */,
 				3AF31BBB1C4DC8280045FFC1 /* LaunchImage-biggest.png in Resources */,
 				3A1AD72C1C4A7E4600B03B1F /* WeiChatListDataSource.plist in Resources */,
 				3AF31BB71C4DC8280045FFC1 /* bottomTipsBg.png in Resources */,
@@ -353,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0B8CB61C4F7D7F007A7EBA /* ContactHomeTableViewCell.swift in Sources */,
 				3A1AD73B1C4A818C00B03B1F /* BaseViewController.swift in Sources */,
 				3AF31BCF1C4DE34A0045FFC1 /* WeiChatHomePopTableViewCell.swift in Sources */,
 				3A1AD7401C4A87A400B03B1F /* WeiChatHomeViewController.swift in Sources */,
@@ -364,6 +375,7 @@
 				3A1AD7371C4A807400B03B1F /* WDNavigationViewController.swift in Sources */,
 				3A5D2FFA1C4B434300701EC8 /* MeUserInfoTableViewController.swift in Sources */,
 				3AF31BCD1C4DE04A0045FFC1 /* WeChatHomeSelectView.swift in Sources */,
+				3A0B8CB71C4F7D7F007A7EBA /* ContactTableViewHeaderView.swift in Sources */,
 				3A5D2FFC1C4B456A00701EC8 /* MeSettingTableViewController.swift in Sources */,
 				3A0B8CA31C4E0F17007A7EBA /* WeChatUserInfoViewController.swift in Sources */,
 				3AF31BC81C4DCFFC0045FFC1 /* WeiChatHomeTableViewCell.swift in Sources */,
